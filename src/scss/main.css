@@ -121,9 +121,21 @@ html {
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 575px) {
+@media only screen and (max-width: 56.25em) {
   .DetailLayout {
-    width: 50rem;
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .DetailLayout {
+    width: 33rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .DetailLayout {
+    height: 40.9rem;
   }
 }
 
@@ -147,6 +159,12 @@ html {
 @media only screen and (max-width: 31.25em) {
   .MemberLayout {
     width: 33rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .MemberLayout {
+    height: 41.9rem;
   }
 }
 

@@ -17,8 +17,14 @@
   background-color: $white;
   box-shadow: $box-shadow $shadow-black;
   border-radius: 1rem;
-  @media screen and (max-width: 575px) {
-    width: 50rem;
+  @media only screen and (max-width: $bp-medium) {
+    width: 60rem;
+   }
+   @media only screen and (max-width: $bp-smallest) {
+     width: 33rem;
+   }
+   @media only screen and (max-width: $bp-smallest) {
+    height: 40.9rem;
   }
 }
 .MemberLayout{
@@ -35,6 +41,9 @@
    @media only screen and (max-width: $bp-smallest) {
      width: 33rem;
    }
+   @media only screen and (max-width: $bp-smallest) {
+    height: 41.9rem;
+  }
 }
 .Wrapper {
   display: flex;
