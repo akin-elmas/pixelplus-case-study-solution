@@ -6,7 +6,10 @@ footer {
   background-color: $footer-bg;
   text-align: center;
   font-weight: 400;
+  
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  position: relative;
-  top: 20rem;
+  z-index: 1;
+ 
 }

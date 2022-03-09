@@ -18,7 +18,9 @@
   box-shadow: $box-shadow $shadow-black;
   border-radius: $box-radius;
   margin-top: $gutter;
-
+  @media only screen and (max-width: $bp-smallest) {
+    width: 33rem;
+  }
   &__img {
     width: 11.5rem;
     height: 11.5rem;
