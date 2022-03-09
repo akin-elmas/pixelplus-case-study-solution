@@ -1,0 +1,49 @@
+.UserDetail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4.1rem;
+  min-width: 35rem;
+}
+
+.Card {
+  width: 35rem;
+  height: 40rem;
+  padding: 4.1rem 8.6rem 4.6rem;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: $box-shadow $shadow-black;
+  border-radius: $box-radius;
+  margin-top: $gutter;
+
+  &__img {
+    width: 11.5rem;
+    height: 11.5rem;
+    img {
+      border-radius: 50%;
+      box-shadow: $box-shadow $shadow-grey;
+    }
+  }
+  &__username {
+    margin-top: 3.9rem;
+    font-size: 2.2rem;
+    color: $card-name;
+  }
+  &__usermail {
+    margin-top: 1.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 4.6rem;
+    color: $card-mail;
+  }
+  
+  &__actions {
+    a {
+      @include btn;
+      padding: 1.6rem 6rem;
+      text-decoration: none;
+    }
+  }
+}

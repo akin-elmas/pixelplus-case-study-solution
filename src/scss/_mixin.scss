@@ -1,0 +1,33 @@
+@mixin btn {
+  border: $border $bline-grey;
+  color: $bline-grey;
+  border-radius: $btn-radius;
+  opacity: 1;
+  font-size: 1.8rem;
+  font-weight: 400;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  &:hover {
+    color: $white;
+    background: $light-blue;
+    border: 1px solid transparent;
+    box-shadow: $btn-shadow $shadow-blue;
+  }
+}
+
+@mixin btn-cr {
+  border-radius: $btn-radius;
+  color: $white;
+  background: $light-blue;
+  border: 1px solid transparent;
+  opacity: 1;
+  font-size: 1.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  &:hover {
+    box-shadow: $btn-shadow $shadow-blue;
+  }
+}
+

@@ -1,0 +1,59 @@
+.MemberCreate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+
+  &__title{
+    margin-top: 6.3rem;
+    margin-bottom: 4rem;
+    font-size: 2.2rem;
+  }
+  &__inp{
+   input{
+    width: 34.9rem;
+    height: 5.3rem;
+    border: $border $bline-grey;
+    border-radius: $btn-radius;
+    padding-left: 2rem;
+    
+   }
+   ::placeholder {
+    color: $bline-grey;
+    opacity: 0.4; 
+  }
+  
+    :-ms-input-placeholder { 
+    color: $bline-grey;
+    opacity: 0.4; 
+    }
+  
+    ::-ms-input-placeholder { 
+    color: $bline-grey;
+    opacity: 0.4; 
+    }
+  }
+  
+  button{
+    @include btn-cr;
+    width: 100%;
+    height: 5.3rem;
+  }
+  a{
+    @include btn-cr;
+    margin-top: -0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 5.3rem;
+  }
+}

@@ -1,0 +1,10 @@
+.Header {
+  height: 11.3rem;
+  background: linear-gradient(90deg, $light-blue 0%, $dark-blue 100%);
+  &__title {
+    text-align: center;
+    line-height: 11.3rem;
+    color: #fff;
+    font-weight: 900;
+  }
+}

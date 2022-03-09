@@ -1,0 +1,38 @@
+$body-bg: #f9f9fb;
+
+//Header Color
+$light-blue: #748efc;
+$dark-blue: #3b4d9a;
+
+//Card
+$card-name: #191b2c;
+$card-mail: #8a8b8d;
+
+//Shadow Color
+$shadow-blue: #748efc80;
+$shadow-grey: #00000029;
+$shadow-black: #00000008;
+$box-shadow: 0px 1rem 2.5rem;
+$btn-shadow: 0px 0.5rem 2rem;
+
+//Border Color
+$bline-grey: #8599a8;
+$bline-light: #d6dce3;
+$white: #ffff;
+
+//Footer
+$footer-txt: hsl(0, 0%, 40%);
+$footer-bg: #040404;
+
+$font: "Roboto", sans-serif;
+
+$border: 1px solid;
+$btn-radius: 0.5rem;
+$box-radius: 1rem;
+
+$gutter: 3rem;
+$max-width: 112.5rem;
+
+body {
+  background-color: $body-bg;
+}
