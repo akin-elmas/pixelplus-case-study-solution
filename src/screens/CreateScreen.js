@@ -10,7 +10,7 @@ const UsersScreen = {
         const data = JSON.stringify({name, job});
         
         fetch('https://reqres.in/api/users', {
-            method: 'POST', // or 'PUT'
+            method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
@@ -31,7 +31,6 @@ const UsersScreen = {
   },
   render: async () => {
   
-   
     return `
     <div class="MemberCreate">
     <h1 class="MemberCreate__title">Create Member</h1>

@@ -1,4 +1,4 @@
-const HomeScreen = {
+const HomeScreen = {  
   render: async (id) => {
     const response = await fetch(`https://reqres.in/api/users?page=${id}`, {
       headers: {
