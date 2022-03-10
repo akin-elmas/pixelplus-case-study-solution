@@ -5,8 +5,27 @@ const UsersScreen = {
       .querySelector('#memberForm')
       .addEventListener('submit', async (e) => {
         e.preventDefault();
-        alert("basildi");
+        const name = document.querySelector("#memberName").value;
+        const job = document.querySelector("#memberJob").value;
+        const data = JSON.stringify({name, job});
         
+        fetch('https://reqres.in/api/users', {
+            method: 'POST', // or 'PUT'
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: data,
+          })
+          .then(response => response.json())
+          .then(data => {
+            alert("Basarili")
+            console.log('Success:', data);
+          })
+          .catch((error) => {
+            console.error('Error:', error);
+          });
+          
+       
       });
     
   },
